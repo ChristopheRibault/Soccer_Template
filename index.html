@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Soccer</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<a id="up-arrow" href="#"><img src="images/up-arrow.png" alt="up-arrow"/></a>
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+		</header>
+		<main>
+			<div class="search">
+				<nav>
+					<div class="small-nav" onclick="displaynav()">
+						<img src="images/menu-icon.png" alt="menu-icon"/>
+					</div>
+					<ul id="nav_menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<p class="search_text">Searching about soccer..??<br/><br/>
+				Here we got same news here</p>
+				<div class="search_box">
+					<input class= "search_input" type="text" name="search_input" placeholder="Search here..." />
+					<button class = "search_btn">Find</button>
+				</div>
+			</div>
+			<div class="about_container">
+				<h2>About our website</h2>
+				<div class="menu">
+					<ul>
+						<li class="menuLinks" onclick="openPage('what-we-do', this)" id="linkOn">What we do</li>
+						<li class="menuLinks" onclick="openPage('history', this)">History</li>
+						<li class="menuLinks" onclick="openPage('news', this)">News</li>
+						<li class="menuLinks" onclick="openPage('clients', this)">Clients</li>
+					</ul>
+				</div>
+				<div class="about_content" id="what-we-do">
+					<img src="images/abt-img.PNG" alt="logo"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu porta ipsum. Cras id tincidunt neque, nec elementum erat. Morbi sit amet massa elit. Phasellus vehicula enim hendrerit posuere sagittis. Maecenas sodales mi diam, eget ultrices nulla laoreet eget. Vestibulum lacinia orci enim, id facilisis mauris ullamcorper non. Integer massa tortor, aliquet eu elit a, venenatis iaculis nunc.</p>
+				</div>
+				<div class="about_content" id="history">
+					<img src="images/abt-2.png" alt="logo"/>
+					<p>Suspendisse urna orci, tincidunt dapibus sapien nec, pretium luctus felis. Praesent sagittis tellus id justo mollis ultricies. Integer lacinia orci risus, at suscipit sem viverra eu. Aenean vulputate, justo quis auctor tempor, nisi tellus venenatis orci, a malesuada magna lacus quis nulla. Aenean ut sem massa. Quisque quis scelerisque nibh. Proin vestibulum nulla eget mauris volutpat, pellentesque ultrices velit sagittis. Maecenas pharetra in orci nec tincidunt. Cras pulvinar mi at tristique condimentum. Quisque egestas ex at molestie tincidunt. Vestibulum tempor sed turpis a feugiat. Cras aliquet arcu non nisl aliquam interdum. Mauris tempus pellentesque mauris vel ullamcorper.</p>
+				</div>
+				<div class="about_content" id="news">
+					<img src="images/abt-3.png" alt="logo"/>
+					<p>Aliquam porta ex eget libero varius, et congue ligula rhoncus. Ut in nisi quis velit ultrices iaculis viverra sed nunc. Duis nisi libero, consectetur ut euismod vel, congue finibus lorem. Sed posuere feugiat tincidunt. Nulla ac justo ut odio sagittis sodales id eget erat. In sit amet massa mauris. Nulla faucibus sit amet tellus in condimentum. Cras elementum mi sed augue laoreet viverra. In vehicula ornare orci, eget placerat arcu molestie nec. Sed pharetra sapien id ante varius, ultrices rutrum augue bibendum. </p>
+				</div>
+				<div class="about_content" id="clients">
+					<img src="images/abt-4.png" alt="logo"/>
+					<p>Sed commodo convallis tincidunt. Duis convallis molestie lacus, non molestie sapien hendrerit a. Ut at suscipit nibh, iaculis eleifend libero. Quisque pellentesque enim vitae ligula fringilla tincidunt. Aenean sed fringilla nisi. In sit amet justo nisi. Cras a augue quis est facilisis elementum. Mauris ultricies iaculis tincidunt. Nam volutpat, arcu et iaculis tempor, dolor urna placerat nulla, tristique convallis elit arcu condimentum eros. Duis lectus nisl, tempor eget massa efficitur, tincidunt luctus neque. Nam scelerisque, libero ut pretium placerat, libero risus luctus diam, eget feugiat massa lacus et nisl. </p>
+				</div>
+			</div>
+			<div class="specials_container">
+				<h2>Special cases solved</h2>
+				<div class = "mosaique">
+					<img class = "mosaique_img" src="images/one-1.jpg" alt="mosaique"/>
+					<img class = "mosaique_img" src="images/one-2.jpg" alt="mosaique"/>
+					<img class = "mosaique_img" src="images/one-3.jpg" alt="mosaique"/>
+					<img class = "mosaique_img" src="images/one-4.jpg" alt="mosaique"/>
+				</div>
+			</div>
+			<div class="news_container">
+				<h3>News to believe</h3>
+				<div class="article_container">
+					<article class="news_article">
+						<img class="article_img" src="images/news-1.jpg" alt="article_img"/>
+						<p class="article_text">Duis mattis nulla eget tortor scelerisque, ac. </p>
+						<a class="article_readmore" href="#">Read More</a>
+					</article>
+					<article class="news_article">
+						<img class="article_img" src="images/news-2.jpg" alt="article_img"/>
+						<p class="article_text">Duis mattis nulla 	eget tortor scelerisque, ac. </p>
+						<a class="article_readmore" href="#">Read More</a>
+					</article>
+					<article class="news_article">
+						<img class="article_img" src="images/news-3.jpg" alt="article_img"/>
+						<p class="article_text">Duis mattis nulla eget tortor scelerisque, ac. </p>
+						<a class="article_readmore" href="#">Read More</a>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<h4 class="subscribe_title">Subscribe to newsletter</h4>
+			<form action="send.php">
+				<img src="images/msg.png" alt="email"/>
+				<fieldset>
+					<label for="email">Enter Your Email here</label>
+					<div class="email_input">
+						<input id= "email" type="email" name="email" placeholder="Email" />
+						<input id="submit" type="submit" value="SUBMIT"/>
+					</div>	
+				</fieldset>
+				</form>
+			<p class="credits">DESIGN BY&nbsp;<em>W3LAYOUTS</em></p>
+		</footer>
+	</body>
+</html>
